@@ -1,0 +1,9 @@
+fichier 2 server
+Un thread est une séquence d'instructions qui peut être exécutée indépendamment dans un processus. C'est une unité d'exécution légère qui représente une tâche ou un flux d'exécution au sein d'un processus. Les threads partagent le même espace d'adressage et les mêmes ressources que leur processus parent, ce qui leur permet de communiquer facilement et d'accéder aux variables partagées.
+
+Contrairement aux processus, les threads ne possèdent pas de ressources propres telles que des tables de descripteurs de fichiers ou des espaces d'adressage distincts. Ils partagent plutôt les ressources du processus parent, ce qui les rend plus légers à créer et à gérer. En conséquence, les threads peuvent être créés et détruits plus rapidement que les processus, ce qui les rend adaptés aux tâches qui nécessitent une commutation rapide entre différentes unités d'exécution.
+
+Les threads peuvent s'exécuter de manière concurrente, ce qui signifie qu'ils peuvent être planifiés et exécutés en parallèle sur plusieurs processeurs ou cœurs dans un système multi-processeurs ou multi-cœurs. Cela permet d'exploiter efficacement les capacités de traitement du matériel et peut conduire à des gains de performances significatifs.
+
+Les threads peuvent être utilisés pour différentes tâches, telles que l'exécution de calculs intensifs, le traitement de tâches d'entrée/sortie, la mise à jour de l'interface utilisateur d'une application, la gestion des connexions réseau, etc. Ils permettent de paralléliser des opérations et d'améliorer la réactivité et l'efficacité des applications.
+

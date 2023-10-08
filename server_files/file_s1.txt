@@ -1,0 +1,11 @@
+fichier 1 server
+Le fait de partager le même espace d'adressage signifie que plusieurs threads d'un même processus ont accès à la même mémoire virtuelle. Dans un processus, l'espace d'adressage est la région de mémoire qui est allouée pour le stockage des données, du code exécutable et des variables.
+
+Lorsque les threads partagent le même espace d'adressage, cela signifie qu'ils peuvent accéder aux mêmes variables, aux mêmes segments de mémoire et aux mêmes données dans l'espace d'adressage du processus. Cela facilite la communication et le partage de données entre les threads.
+
+L'avantage du partage de l'espace d'adressage est qu'il permet aux threads de communiquer efficacement en utilisant des variables partagées. Par exemple, un thread peut modifier une variable, et cette modification sera immédiatement visible à tous les autres threads qui accèdent à cette même variable. Cela permet la coordination et la synchronisation entre les threads lorsqu'ils travaillent ensemble sur une tâche.
+
+Cependant, le partage de l'espace d'adressage nécessite également une gestion prudente des accès concurrents aux données partagées. Si plusieurs threads tentent de modifier la même variable simultanément, cela peut entraîner des problèmes de concurrence, tels que des lectures ou des écritures incohérentes. Il est donc important d'utiliser des mécanismes de synchronisation, tels que des verrous ou des sémaphores, pour garantir l'intégrité des données partagées et éviter les conditions de concurrence indésirables.
+
+En résumé, le partage du même espace d'adressage signifie que les threads d'un même processus ont accès à la même mémoire virtuelle, ce qui facilite la communication et le partage de données entre les threads. Cependant, cela nécessite une gestion appropriée pour éviter les problèmes de concurrence.
+

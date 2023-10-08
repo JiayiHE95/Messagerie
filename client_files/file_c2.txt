@@ -1,0 +1,11 @@
+fichier 2 client 
+Un mutex (abréviation de "mutual exclusion" en anglais) est un sémaphore spécialisé utilisé pour garantir l'exclusion mutuelle dans un programme concurrent. Il est utilisé lorsque plusieurs threads doivent accéder à une ressource partagée et qu'il n'est pas nécessaire de compter combien de threads sont en attente.
+
+Un mutex est facile à utiliser dans les threads car il dispose de deux opérations de base : mutex_lock et mutex_unlock.
+
+L'opération mutex_lock est utilisée pour verrouiller le mutex, ce qui signifie qu'un seul thread peut accéder à la ressource partagée à la fois. Si le mutex est déjà verrouillé par un autre thread, l'appel à mutex_lock par un thread en attente le bloque jusqu'à ce que le mutex soit déverrouillé par le thread actuel qui le détient. Cela garantit que seul un thread à la fois peut accéder à la ressource critique, assurant ainsi l'exclusion mutuelle.
+
+L'opération mutex_unlock est utilisée pour déverrouiller le mutex, permettant à un autre thread en attente de l'acquérir. Lorsque le mutex est déverrouillé, un thread en attente, s'il y en a, est choisi de manière aléatoire pour être débloqué. Cela signifie qu'il n'y a aucune garantie que les threads seront débloqués dans l'ordre dans lequel ils sont arrivés.
+
+En utilisant un mutex, on peut synchroniser l'accès aux ressources partagées de manière efficace et éviter les problèmes de concurrence tels que les conditions de concurrence et les courses critiques. Cependant, il est important d'utiliser le mutex correctement pour éviter les verrouillages mutuels et les impasses.
+

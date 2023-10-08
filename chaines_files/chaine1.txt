@@ -1,0 +1,1 @@
+numéro : 1, nom : premierChaine, capacité : 5, Theme : jeu

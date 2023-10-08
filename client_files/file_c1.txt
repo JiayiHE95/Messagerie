@@ -1,0 +1,10 @@
+fichier 1 client 
+En plus des sémaphores, un autre moyen de synchronisation couramment utilisé est la variable conditionnelle. Elle est souvent utilisée en combinaison avec les mutex, qui gèrent l'exclusion mutuelle, pour gérer le blocage et l'activation des threads.
+
+Dans la bibliothèque Pthread (POSIX threads), on dispose de fonctions pour créer et détruire une variable conditionnelle, à savoir pthread_cond_init et pthread_cond_destroy.
+
+La fonction pthread_cond_wait est utilisée pour bloquer le thread appelant jusqu'à ce qu'il reçoive un signal avec pthread_cond_signal. Le thread est bloqué en attente sur la variable conditionnelle associée jusqu'à ce qu'un autre thread émette un signal. Ce signal peut être émis lorsque certaines conditions souhaitées sont remplies. Le mutex associé doit être verrouillé avant d'appeler pthread_cond_wait.
+
+La fonction pthread_cond_broadcast permet de débloquer plusieurs threads qui attendent le même signal sur la variable conditionnelle. Elle est souvent utilisée lorsque plusieurs threads doivent être réveillés simultanément pour reprendre leur exécution après avoir attendu une certaine condition.
+
+En résumé, les variables conditionnelles fournissent un mécanisme de blocage et d'activation plus sophistiqué que les sémaphores, car elles permettent aux threads d'attendre des conditions spécifiques avant de poursuivre leur exécution. Elles sont généralement utilisées en conjonction avec les mutex pour garantir une synchronisation correcte entre les threads.

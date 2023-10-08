@@ -1,0 +1,11 @@
+fichier 3 server 
+Le multi-threading est une technique utilisée dans les systèmes d'exploitation pour exécuter plusieurs threads de contrôle au sein d'un même processus. Les threads sont des unités d'exécution légères qui partagent le même espace d'adressage et les mêmes ressources que leur processus parent.
+
+Les raisons pour lesquelles le multi-threading est utilisé sont les suivantes :
+
+Parallélisme au sein d'une même application : Le multi-threading permet d'exécuter plusieurs tâches simultanément dans une application. Certaines de ces tâches peuvent se bloquer temporairement, mais cela n'empêche pas les autres threads de continuer à s'exécuter, ce qui permet d'améliorer l'efficacité globale de l'application.
+Création et destruction faciles des threads : Les threads ne possèdent pas de ressources propres et partagent les ressources du processus parent. Cela les rend plus faciles à créer et à détruire que les processus, ce qui permet une gestion plus flexible des tâches et des ressources.
+Amélioration des performances : En répartissant les tâches entre différents threads, notamment en exécutant des opérations d'entrée/sortie et des traitements lourds dans des threads séparés, on peut accélérer le fonctionnement global de l'application. Pendant qu'un thread effectue une opération d'entrée/sortie, les autres threads peuvent continuer à travailler, évitant ainsi les temps d'attente inutiles.
+Adapté aux systèmes multi-processeurs ou multi-cœurs : Dans les systèmes dotés de plusieurs processeurs ou cœurs, le multi-threading permet une véritable exécution parallèle, où plusieurs threads peuvent s'exécuter simultanément sur différents processeurs ou cœurs. Cela exploite efficacement les ressources matérielles disponibles et permet d'obtenir des gains de performances significatifs.
+En résumé, le multi-threading est utilisé pour exécuter plusieurs threads simultanément au sein d'un même processus, ce qui permet de maximiser l'utilisation des ressources et d'améliorer les performances globales de l'application. C'est particulièrement utile lorsque des tâches peuvent être exécutées en parallèle ou lorsque des opérations d'entrée/sortie doivent être gérées de manière efficace.
+

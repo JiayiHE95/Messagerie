@@ -1,0 +1,7 @@
+fichier 3 client 
+Les processus regroupent les ressources et sont des entités planifiées pour s'exécuter sur un processeur. Les threads, quant à eux, sont les unités d'exécution au sein d'un processus. Ils partagent le même espace d'adressage, les fichiers ouverts et d'autres ressources du processus.
+
+Les threads sont souvent appelés processus légers (lightweight processes) car ils ont des propriétés similaires à celles des processus, mais avec un coût de création et de commutation beaucoup plus faible. Ils peuvent se trouver dans différents états, tels que "running" (en cours d'exécution), "blocked" (bloqué), "ready" (prêt) ou "terminated" (terminé), tout comme les processus.
+
+En résumé, les processus regroupent les ressources et les threads sont les entités exécutées à l'intérieur d'un processus. Les threads partagent le même espace d'adressage et les autres ressources du processus, et ils ont des propriétés similaires aux processus, tels que des états et des capacités de planification.
+

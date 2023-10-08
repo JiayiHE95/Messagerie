@@ -1,0 +1,57 @@
+Ⅰ. @mp
+➙ Format: '@mp <destinataire> <message>' 
+➙ Description : Permet d'envoyer un message privé à un utilisateur spécifique.
+➙ Exemple : @mp John Bonjour John, comment ça va ?
+
+Ⅱ. @printUsers
+➙ Format : '@printUsers'
+➙ Description : Affiche la liste des utilisateurs connectés au serveur.
+
+Ⅲ. @allCmd
+➙ Format : '@allCmd'
+➙ Description : Affiche la liste de toutes les commandes/fonctionnalités disponibles.
+
+Ⅳ. @fin
+➙ Format : '@fin'
+➙ Description : Permet de se déconnecter du serveur.
+
+Ⅴ. @my_files
+➙ Format : '@my_files'
+➙ Description : Affiche les différents fichiers de l'utilisateur, à chaque fichier correspond un nombre.
+    
+Ⅵ. @send_file
+➙ Format : '@send_file <numéro>'
+➙ Description : Lance le processus d'envoi de fichier vers le serveur, le nombre rentrer correspond au fichier associé ('@my_files' pour le savoir).
+➙ Exemple : @send_file 3
+
+Ⅶ. @get_file
+➙ Format : '@get_file <numéro>'
+➙ Description : Lance le processus de réception de fichier depuis le serveur, le nombre rentrer correspond au fichier associé ('@server_file' pour le savoir).
+➙ Exemple : @get_file 3 
+
+Ⅷ. @server_files
+➙ Format : '@server_files'
+➙ Description : Permet d'accéder aux fonctionnalités de gestion des fichiers côté serveur, à chaque fichier correspond un nombre.
+
+Ⅸ. @join_chanel
+➙ Format : '@join_chanel <num_chaine>'
+➙ Description : Rejoindre une chaîne spécifique avec son numéro associé ('@show_chanels' pour savoir toutes les chaînes disponibles).
+➙ Exemple : @join_chanel 2
+
+Ⅹ. @leave_chanel
+➙ Format : '@leave_chanel’
+➙ Description : Quitter la chaîne sur laquelle l’utilisateur est connecté.
+
+Ⅺ. @create_chanel
+➙ Format : '@create_chanel <nom_chanel> <theme_chanel> <capacité_chanel>'
+➙ Description : Créer une nouvelle chaîne avec un nom, un thème et la capacité spécifiés.
+➙ Exemple : @create_chanel doremi musique 4
+
+Ⅻ. @delete_chanel
+➙ Format : '@delete_chanel <num_chanel>'
+➙ Description : Supprimer une chaîne spécifique en utilisant son numéro.
+➙ Exemple : @delete_chanel 3
+
+ⅫⅠ. @show_chanels
+➙ Format : '@show_chanels'
+➙ Description : Liste toutes les chaînes disponibles et leur numéro associé.
